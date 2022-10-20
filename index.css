@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #252435;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_block {
+    border-right: 1px solid #323a48;
+    border-bottom: 1px solid #323a48;
+    width: 197px;
+    height: 72px;
+}
+
+.logo {
+    padding: 20px 14px;
+}
+
+.user_block {
+    width: 300px;
+    border-left: 1px solid #323a48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.auth {
+    border-radius: 22px;
+    border: 1px solid #798b94;
+    padding: 4px 12px 4px 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.bell {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+
+    border: 1px solid #778995;
+    border-radius: 50%;
+}
+
+.auth__mail {
+    color: white;
+    font: 16px Roboto, sans-serif;
+    margin: 1px 10px 0;
+}
+
+.more {
+    border: 5px solid transparent;
+    border-top: 5px solid #778995;
+    margin-top: 5px;
+    padding-right: 2px;
+}
+.section {
+    display: flex;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #252435;
+}
+.category {
+    display: flex;
+    background-color: #252435;
+    border-bottom: 1px solid #323a48;
+    width: 196px;
+    height: 98px;
+    padding: 8px 16px;
+    align-items: center;
+}
+.category:hover {
+    background: linear-gradient(180deg,rgba(36,238,189,.3) 0%,rgba(98,251,214,0) 100%)
+}
+
+.icon_text {
+    display: flex;
+    align-items: center;
+}
+.navbar__svg {
+    height: 32px;
+    width: 32px;
+    margin-right: 34px;
+}
+.category_text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    max-width: 96px;
+    color: white;
+}
+.content {
+    padding: 30px 15px 0;
+    border-left: 4px solid #0fdeac;
+}
+.content h1 {
+    font: 28px Roboto, sans-serif;
+    margin: 0;
+}
+.content h5 {
+    color: #798b94;
+    font: 18px Roboto, sans-serif;
+    margin: 0;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #eeeeee;
+    border-bottom-color: rgb(238, 238, 238);
+    margin-bottom: 16px;
+}
