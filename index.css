@@ -104,14 +104,18 @@ body {
     color: white;
 }
 .content {
-    padding: 30px 15px 0;
+    padding: 42px 52px 0;
     border-left: 4px solid #0fdeac;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fcfcfc;
 }
-.content h1 {
+.headers h1 {
     font: 28px Roboto, sans-serif;
     margin: 0;
 }
-.content h5 {
+.headers h5 {
     color: #798b94;
     font: 18px Roboto, sans-serif;
     margin: 0;
@@ -119,4 +123,114 @@ body {
     border-bottom: 1px solid #eeeeee;
     border-bottom-color: rgb(238, 238, 238);
     margin-bottom: 16px;
+}
+
+.page_list {
+    margin: 0 0 20px;
+    padding: 24px;
+    box-shadow: 0 2px 4px #00000029;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.doc_title {
+    font-weight: 400;
+    color: #798b94;
+    margin: 16px 0 29px;
+    font: 14px Roboto, sans-serif;
+}
+.queries {
+    font-weight: 500 !important;
+    font: 18px Roboto, sans-serif;
+    color: #242734;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eeeeee;
+}
+.request {
+    display: flex;
+    background-color: #fcf2e4;
+    padding: 21px 16px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+.request_info {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+.human_name {
+    font-weight: 600 !important;
+    font: 16px Roboto, sans-serif;
+    margin: 0;
+    transform: scale(1, 1.05);
+    color: #242734;
+}
+
+.additional_info {
+    color: #636363;
+    font: 16px Roboto, sans-serif;
+    transform: scale(1, 1.05);
+    margin-top: 1px;
+}
+.request_access {
+    font: 16px Roboto, sans-serif;
+    transform: scale(1, 1.05);
+    color: #242734;
+    margin: 1px 0 0;
+}
+.pending_access {
+    display: flex;
+    align-items: center;
+}
+.lds-ring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #00bf93 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.pending_access span {
+    color: #798b94;
+    font: 14px Roboto, sans-serif;
+}
+
+
+@media (max-width: 1650px) {
+    .content {
+        padding: 30px 15px 0;
+    }
 }
